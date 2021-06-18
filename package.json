@@ -1,0 +1,36 @@
+{
+  "name": "attack",
+  "version": "1.0.0",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/contract": "^4.3.19",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "chai": "^4.3.4",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "scripts": {
+    "build": "truffle compile",
+    "console": "truffle console",
+    "ropsten:deploy": "truffle --network ropsten deploy",
+    "mainnet:deploy": "truffle --network mainnet deploy",
+    "develop": "truffle develop",
+    "test:local": "truffle test --network develop",
+    "test": "truffle test --network development",
+    "prettier": "prettier --write .",
+    "lint": "yarn prettier && solhint -c .solhint.json contracts/**/*.sol"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "assembly"
+  ],
+  "author": "tony@maapps.dev",
+  "license": "MIT",
+  "description": "Solidity Game - Attack"
+}
