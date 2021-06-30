@@ -1,5 +1,4 @@
 const Hacker = artifacts.require("Hacker");
-const utils = require("./helpers/utils");
 const { expect } = require("chai");
 const { BN } = require("@openzeppelin/test-helpers");
 
