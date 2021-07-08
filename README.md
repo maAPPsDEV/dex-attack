@@ -1,18 +1,26 @@
-# Solidity Game - [Game Title] Attack
+# Solidity Game - DEX Attack
 
-_Inspired by OpenZeppelin's [Ethernaut](https://ethernaut.openzeppelin.com), [Game Title] Level_
+_Inspired by OpenZeppelin's [Ethernaut](https://ethernaut.openzeppelin.com), Dex Level_
 
 ⚠️Do not try on mainnet!
 
 ## Task
 
-Hacker the basic token contract below.
+The goal of this level is for you to hack the basic [DEX](https://en.wikipedia.org/wiki/Decentralized_exchange) contract below and steal the funds by price manipulation.
 
-1. You are given 20 tokens to start with and you will beat the game if you somehow manage to get your hands on any additional tokens. Preferably a very large amount of tokens.
+You will start with 10 tokens of `token1` and 10 of `token2`. The DEX contract starts with 100 of each token.
+
+You will be successful in this game if you manage to drain all of at least 1 of the 2 tokens from the contract, and allow the contract to report a "bad" price of the assets.
+ 
+**Quick note**
+
+Normally, when you make a swap with an ERC20 token, you have to `approve` the contract to spend your tokens for you. To keep with the syntax of the game, we've just added the `approve` method to the contract itself. So feel free to use `contract.approve(contract.address, <uint amount>)` instead of calling the tokens directly, and it will automatically approve spending the two tokens by the desired amount. Feel free to ignore the `SwappableToken` contract otherwise.
 
 _Hint:_
 
-1. What is an odometer?
+1. How is the price of the token calculated?
+2. How does the `swap` method work?
+3. How do you `approve` a transaction of an ERC20?
 
 ## What will you learn?
 
