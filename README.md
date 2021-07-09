@@ -24,8 +24,14 @@ _Hint:_
 
 ## What will you learn?
 
-1. Solidity Security Consideration
-2. **Underflow** and **Overflow** in use of unsigned integers
+1. ERC20
+2. SWAP
+
+### DEX
+
+The idea of this game is that flash loan attacks are rampant in the DeFi world, and having some experience with some of the price issues is going to be a must for up and coming solidity developers.
+
+Basically, the Dex is a really crappy uniswap. It reports a price based on liquidity pools, and a user can use this to flip back and forth and eventually drain the dex of the liquidity pools.
 
 ## What is the most difficult challenge?
 
