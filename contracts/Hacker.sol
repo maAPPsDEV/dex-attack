@@ -13,5 +13,6 @@ contract Hacker {
     hacker = payable(msg.sender);
   }
 
+  /// @dev We will hack the target through front-end. See test files.
   function attack(address _target) public onlyHacker {}
 }
