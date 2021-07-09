@@ -27,7 +27,7 @@ _Hint:_
 1. ERC20
 2. SWAP
 
-### DEX
+### DEX 🤑
 
 The idea of this game is that flash loan attacks are rampant in the DeFi world, and having some experience with some of the price issues is going to be a must for up and coming solidity developers.
 
