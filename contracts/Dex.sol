@@ -28,6 +28,10 @@ contract Dex {
     IERC20(to).transferFrom(address(this), msg.sender, swap_amount);
   }
 
+  function add_liquidity(address token_address, uint256 amount) public {
+    IERC20(token_address).transferFrom(msg.sender, address(this), amount);
+  }
+
   function get_swap_price(
     address from,
     address to,
