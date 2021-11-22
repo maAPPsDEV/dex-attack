@@ -62,6 +62,7 @@ contract Dex {
     address to,
     uint256 amount
   ) public {
+    require((from == token1 && to == token2) || (from == token2 && to == token1), "Invalid tokens");
     require(IERC20(from).balanceOf(msg.sender) >= amount, "Not enough to swap");
     uint256 swap_amount = get_swap_price(from, to, amount);
     IERC20(from).transferFrom(msg.sender, address(this), amount);
